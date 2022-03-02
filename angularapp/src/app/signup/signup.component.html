@@ -1,0 +1,20 @@
+<nav class="navbar">
+    Register
+    </nav>
+    <div class="formbody">
+        <form [formGroup]="signupform" (ngSubmit)="signup()">
+            <input [(ngModel)] = "user.email" type="email" id="email" placeholder="Enter email" name="email" formControlName="email">
+            <span *ngIf="email && email.invalid && email.touched">Please enter valid email</span>
+            <input  [(ngModel)] = "user.username" type="text" id="username" placeholder="Enter Username" name="username" formControlName="username">
+            <span *ngIf="username && username.invalid && username.touched">Please enter valid username</span>
+            <input  [(ngModel)] = "user.mobileNumber" type="text" id="mobileNumber" placeholder="Enter Mobilenumber" name="mobilenumber" formControlName="mobilenumber">
+            <span *ngIf="mobilenumber && mobilenumber.invalid && mobilenumber.touched">Please enter valid mobile number</span>
+            <input  [(ngModel)] = "user.password" type="password" id="password" placeholder="Enter password" name="password" formControlName="password" (change)="onPasswordChange()">
+            <span *ngIf="password && password.invalid && password.touched">Please enter valid password</span>
+            <input type="password" id="confirmPassword" placeholder="Confirm password" name="confirmpassword" formControlName="confirmpassword" (change)="onPasswordChange()">
+            <span *ngIf="confirmpassword && confirmpassword.invalid && confirmpassword.touched && confirm_password.hasError('mismatch')">Password and confirm password missmatch</span>
+            <br/><button type="submit" [disabled]="signupform.invalid" id="submitButton"><b>Submit</b></button><br/><br/>
+           <div id="alrdy"> Already a user ? <a id="signinLink" href='user/login' >Login</a></div>
+    
+        </form>
+    </div>
