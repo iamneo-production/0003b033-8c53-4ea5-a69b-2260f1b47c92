@@ -1,4 +1,4 @@
-package com.examly.controller;
+package com.examly.springapp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 //import com.examly.model.LoginModel;
-import com.examly.model.UserModel;
-import com.examly.repository.UserRepository;
+import com.examly.springapp.model.UserModel;
+import com.examly.springapp.repository.UserRepository;
 
-@CrossOrigin(origins = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/")
+@CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @RestController
 @RequestMapping("/user")
 public class AuthController {

@@ -6,9 +6,9 @@ import { UserModel } from './user-model';
   providedIn: 'root'
 })
 export class UsersignupService {
-  baseUrl='http://localhost:8888/user/signup';
+  baseUrl='https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/user/signup';
   constructor(private httpClient:HttpClient) { }
   createUser(user:UserModel):Observable<object>{
-    return this.httpClient.post<UserModel[]>(this.baseUrl,user);
+    return this.httpClient.post<UserModel[]>(`${this.baseUrl}`,user);
   }
 }
