@@ -1,0 +1,48 @@
+.navbar{
+    margin-top: 20px;
+    margin-left: 10%;
+    width:79.9%;
+    height: 40px;
+    color:white;
+    background-color: brown;
+    text-align: center;
+    box-shadow: 0 0 3px 1px black;
+    border: 1px solid black;
+    font-size: 30px;
+}
+.formbody{
+    border:2px solid black;
+    margin-left: 10%;
+    margin-top: 1%;
+    width:79.7%;
+    height: 550px;
+    color:white;
+    background-image: linear-gradient(rgb(1, 238, 255), rgb(32, 74, 109));
+    box-shadow: 0 0 3px 1px black;
+}
+input{
+    width:40%;
+    height:30px;
+    margin: 20px;
+    margin-left:30%;
+}
+button{
+    margin-left:45%;
+    width:100px;
+    height:30px;
+    color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgb(248, 2, 2), rgb(94, 12, 12));
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+span{
+    color: red;
+    margin-left:30%;
+}
+#alrdy{
+    margin-left:42%;
+}
+input.ng-invalid.ng-touched{border: 2px solid red !important;}
+input.ng-valid.ng-touched{border: 2px solid rgb(18, 209, 18) !important;}
