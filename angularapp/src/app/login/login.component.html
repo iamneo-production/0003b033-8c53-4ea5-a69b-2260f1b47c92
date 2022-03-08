@@ -1,0 +1,18 @@
+<nav class="navbar">
+    Abacus Academy Admission Portal
+    </nav>
+    <div class="formbody">
+        <form [formGroup]="loginform" (ngSubmit)="login()">
+            <div style="width:32.5%;display:inline-block;float:left;">
+            <img style="width:100%"  src="https://img.pixers.pics/pho_wat(s3:700/FO/44/99/54/89/700_FO44995489_11d7679b6d818eb89362cecc463a1a56.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/posters-books-with-the-graduate-cap.jpg.jpg">
+            </div>
+            <div style="margin-top:50px;width:64%;display:inline-block;float:right;">
+            <input [(ngModel)] = "user.email" type="email" id="email" placeholder="Enter email" name="email" formControlName="email">
+            <span *ngIf="email && email.invalid && email.touched">Please enter valid email</span>
+            <br/><input  [(ngModel)] = "user.password" type="password" id="password" placeholder="Enter password" name="password" formControlName="password">
+            <span *ngIf="password && password.invalid && password.touched">Please enter valid password</span>
+            <br/> <button type="submit" [disabled]="loginform.invalid" id="submitButton"><b>Login</b></button><br/><br/>
+            <div id="alrdy"> New user ? <a id="signupLink" href='user/signup' >Sign up</a></div>
+        </div>
+        </form>
+    </div>
