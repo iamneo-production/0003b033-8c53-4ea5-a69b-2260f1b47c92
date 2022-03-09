@@ -9,6 +9,10 @@ import {SignupComponent} from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { AdminDashbordComponent } from './admin-dashbord/admin-dashbord.component';
 import { UserDashbordComponent } from './user-dashbord/user-dashbord.component';
+import {AdminStudentComponent } from './admin-student/admin-student.component';
+import { EditStudentComponent } from './edit-student/edit-student.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,10 @@ import { UserDashbordComponent } from './user-dashbord/user-dashbord.component';
     SignupComponent,
     LoginComponent,
     AdminDashbordComponent,
-    UserDashbordComponent
+    UserDashbordComponent,
+    AdminStudentComponent,
+    EditStudentComponent,
+    AddStudentComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +32,7 @@ import { UserDashbordComponent } from './user-dashbord/user-dashbord.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

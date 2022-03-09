@@ -18,8 +18,33 @@
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 25px;
-    margin-left:18%;
+    margin-left:30%;
 }
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto ;
+    grid-template-rows: 60px 60px 60px;
+    gap: 20px;
+    padding: 20px;
+    
+    
+  }
+  .fd{
+      
+      box-shadow: 0 0 8px 2px brown;
+      font-size: 20px;
+  }
+  #fd1{
+      background-color: brown;
+      color: aliceblue;
+      border-radius: 25px;
+      width: 100px;
+      height:50px;
+  }
+  #fd1:hover{
+      cursor: pointer;
+      box-shadow: 0 0 5px 2px rgb(8, 8, 8);
+  }
 #adminCourse{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -53,5 +78,4 @@ color: rgba(0, 204, 255, 0.993);
     color:white;
     background-image: linear-gradient(rgb(1, 238, 255), rgb(32, 74, 109));
     box-shadow: 0 0 3px 1px black;
-    
 }

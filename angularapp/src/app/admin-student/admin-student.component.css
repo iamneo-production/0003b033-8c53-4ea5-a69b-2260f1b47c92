@@ -9,17 +9,14 @@
     border: 1px solid black;
     
 }
-#navlink1{
-    float: left;
-    text-decoration: none;
-    font-size: 27px;
-}
+
 #adminAcademy{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 25px;
-    margin-left:18%;
+    margin-left:30%;
 }
+
 #adminCourse{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -53,5 +50,38 @@ color: rgba(0, 204, 255, 0.993);
     color:white;
     background-image: linear-gradient(rgb(1, 238, 255), rgb(32, 74, 109));
     box-shadow: 0 0 3px 1px black;
-    
+}
+.table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .table tr:nth-child(even){background-color: #b8df8c;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(46, 165, 42);
+  color: white;
+}
+#editStudent{
+    width:25px;
+    margin-right:4px;
+}
+#editStudent:hover{
+    box-shadow: 0 0 3px 1px black;
+}
+#deleteStudent{
+    width:25px;
+    margin-left:4px;
+}
+#deleteStudent:hover{
+    box-shadow: 0 0 3px 1px black;
 }
