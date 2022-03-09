@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//import com.examly.model.LoginModel;
+import com.examly.springapp.model.LoginModel;
 import com.examly.springapp.model.UserModel;
 import com.examly.springapp.repository.UserRepository;
+import com.examly.springapp.model.LoginModel;
 
 @CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @RestController
@@ -25,14 +26,14 @@ public class AuthController {
 		return "\"User added\"";
 		
 	}
-	// @PostMapping("/login")
-	// public boolean isUserPresent(@RequestBody LoginModel data)
-	// {
-	// 	UserModel user=urepo.findByEmailAndPassword(data.getEmail(),data.getPassword());
-	// 	if(user==null)
-	// 		return false;
-	// 	else
-	// 		return true;
+	@PostMapping("/login")
+	public boolean isUserPresent(@RequestBody LoginModel data)
+	{
+		UserModel user=urepo.findByEmailAndPassword(data.getEmail(),data.getPassword());
+		if(user==null)
+			return false;
+		else
+			return true;
 		
-	// }
+	}
 }

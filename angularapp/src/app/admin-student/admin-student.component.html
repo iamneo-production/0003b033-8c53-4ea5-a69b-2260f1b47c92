@@ -1,0 +1,40 @@
+<nav class="navbar">
+    <a id="adminAcademy">Academy</a>
+    <a id="adminCourse">Course</a>
+    <a (click)="viewStudent()" id="adminStudents">Students</a>
+    <a (click)="logout()" id="logout">Logout</a>
+</nav>
+    <div class="formbody">
+        <table class = "table">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Mobile</th>
+                    <th>DOB</th>
+                    <th>Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="{{ 'studentGrid' + (i+1)}}" *ngFor = "let stud of student;let i = index" >
+                    <td> {{ stud.studentID }} </td>
+                    <td> {{ stud.studentName }} </td>
+                    <td> {{ stud.mobile }} </td>
+                    <td> {{ stud.studentDOB }} </td>
+                    <td> {{ stud.address }} </td>
+                    <td><a><img (click)="editStudent(stud.studentID!)" id="editStudent" src="https://www.pngfind.com/pngs/m/275-2755033_edit-png-file-on-phone-svg-edit-icon.png"></a><a><img (click)="deleteStudent(stud.studentID!)" id="deleteStudent" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShL4w3gmrhC5QTqdKBgFIB7ONm3MZ95IE_gQ&usqp=CAU"></a></td>
+                </tr>
+                <tr :hover style="background-color:transparent">
+                    <td style="border:0px;"> </td>
+                    <td style="border:0px;"> </td>
+                    <td style="border:0px;"> </td>
+                    <td style="border:0px;"> </td>
+                    <td style="border:0px;"> </td>
+                    <td > 
+                    <a (click)="addStudent()" id="addStudent"><span><img style="width:30px" src="https://cdn4.iconfinder.com/data/icons/vectory-bonus-3/40/button_add-512.png"></span><span>Add Student</span></a>          
+            </td>
+                </tr>
+                </tbody>
+        </table>
+    </div>

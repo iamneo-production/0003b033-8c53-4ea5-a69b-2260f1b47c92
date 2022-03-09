@@ -1,0 +1,22 @@
+<nav class="navbar">
+    <a id="adminAcademy">Academy</a>
+    <a id="adminCourse">Course</a>
+    <a (click)="viewStudent()" id="adminStudents">Students</a>
+    <a (click)="logout()" id="logout">Logout</a>
+</nav>
+<div class="formbody" >
+<form  (ngSubmit)="onSubmit()" class="grid-container">   
+<label>Student Name:</label>
+<input [(ngModel)] = "student.studentName" id="studentName" name="studentName"  class="fd" type="text" placeholder="Enter Name">
+<label>Student DOB:</label>
+<input [(ngModel)] = "student.studentDOB" id="studentDOB" name="studentDOB"  class="fd" type="text" placeholder="Enter DOB">
+<label>Student Address:</label>
+<input [(ngModel)] = "student.address" id="address" name="address"  class="fd" type="text" placeholder="Enter Address">
+<label>Student Mobile:</label>
+<input [(ngModel)] = "student.mobile" id="mobile" name="mobile"  class="fd" type="text" placeholder="Enter Mobile">
+<label>Student Age:</label>
+<input [(ngModel)] = "student.age" id="age" name="age"  class="fd" type="number" placeholder="Enter age">
+<input id="fd1" type="submit" value="submit">
+</form>
+</div>
+

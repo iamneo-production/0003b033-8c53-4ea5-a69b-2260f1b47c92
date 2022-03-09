@@ -5,12 +5,25 @@ import {ReactiveFormsModule} from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {SignupComponent} from './signup/signup.component'
+import {SignupComponent} from './signup/signup.component';
+import { LoginComponent } from './login/login.component';
+import { AdminDashbordComponent } from './admin-dashbord/admin-dashbord.component';
+import { UserDashbordComponent } from './user-dashbord/user-dashbord.component';
+import {AdminStudentComponent } from './admin-student/admin-student.component';
+import { EditStudentComponent } from './edit-student/edit-student.component';
+import { AddStudentComponent } from './add-student/add-student.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SignupComponent
+    SignupComponent,
+    LoginComponent,
+    AdminDashbordComponent,
+    UserDashbordComponent,
+    AdminStudentComponent,
+    EditStudentComponent,
+    AddStudentComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +32,7 @@ import {SignupComponent} from './signup/signup.component'
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
