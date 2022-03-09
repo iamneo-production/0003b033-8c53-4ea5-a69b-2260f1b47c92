@@ -34,8 +34,8 @@ this.UsersignupService.createUser(this.user).subscribe(data=>{console.log(data)
   signupform=new FormGroup({
 	  email:new FormControl('',[Validators.required,Validators.email]),
 	  username:new FormControl('',[Validators.required]),
-    mobilenumber:new FormControl('',[Validators.required,Validators.pattern("[0-9 ]{10}")]),
-    password:new FormControl('',[Validators.required,]),
+    mobilenumber:new FormControl('',[Validators.required,Validators.pattern("[0-9]{10}")]),
+    password:new FormControl('',[Validators.required,Validators.pattern("^[a-zA-Z0-9@#]{8,15}$")]),
     confirmpassword:new FormControl('',[Validators.required])
   })
 
