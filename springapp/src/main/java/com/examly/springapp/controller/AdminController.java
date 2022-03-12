@@ -47,7 +47,7 @@ public class AdminController {
 		student.setMobile(Student.getMobile());
 		student.setAge(Student.getAge());
 		arepo.save(student);
-		return "\"Student details deleted\"";
+		return "\"Student details edited\"";
 		
 	}
 	@GetMapping("/viewStudent/{id}")
