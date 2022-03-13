@@ -23,6 +23,8 @@ public class StudentModel {
 	@Column(name="age")
 	private int age;
 	
+	@OneToOne(mappedBy = "sm")
+	 private AdmissionModel adm;
 	
 	public StudentModel(int studentID, String studentName, Date studentDOB, String address, String mobile, int age) {
 		super();
