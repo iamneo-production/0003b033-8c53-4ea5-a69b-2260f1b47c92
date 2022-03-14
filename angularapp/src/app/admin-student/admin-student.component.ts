@@ -37,9 +37,11 @@ editStudent(id:number)
 }
   deleteStudent(studentID:number)
   {
-    this.StudentService.deleteStudent(studentID).subscribe(data=>{
-      console.log(data);
-      this.retriveStudent();
-      })
+    if(window.confirm('Are sure you want to delete this item ?')){
+      this.StudentService.deleteStudent(studentID).subscribe(data=>{
+        alert("Student sucessfully deleted");
+        this.retriveStudent();
+        })
+     }   
   }
 }

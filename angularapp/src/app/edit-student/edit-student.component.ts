@@ -24,6 +24,7 @@ export class EditStudentComponent implements OnInit {
   }
   onSubmit(){
     this.studentservice.updateStudent(this.id, this.student).subscribe( data =>{
+      alert("Student details edited");
       this.goToStudentList();
     }
     , error => console.log(error));
