@@ -29,7 +29,7 @@ export class EditCourseComponent implements OnInit {
   
 
   goToCourseList(){
-    this.router.navigate(['/courses'])
+    this.router.navigate(['admin/courses'])
 
   }
 

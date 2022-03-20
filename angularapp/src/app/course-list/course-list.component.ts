@@ -25,7 +25,7 @@ export class CourseListComponent implements OnInit {
   }
 
   editcourse(id: number){
-    this.router.navigate(['editcourse',id])
+    this.router.navigate(['admin/editcourse',id])
 
   }
 
@@ -39,7 +39,7 @@ export class CourseListComponent implements OnInit {
   }
 
   courseDetails(id: number){
-    this.router.navigate(['viewcourse',id])
+    this.router.navigate(['admin/viewcourse',id])
   }
 
   goToCourseList(){
