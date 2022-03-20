@@ -1,0 +1,38 @@
+<ul class="navbar-nav">
+    <a id="home" class="nav-link nav-item active" aria-current="page" href=" ">Home</a>
+    <a id="course" class="nav-link nav-item" (click)="goToCourseList()" routerLinkActive="active">Courses</a>
+    <a id="addcourse" class="nav-link nav-item" (click)="addCourse()" routerLinkActive="active">Add Course</a>
+  </ul>
+<p>Edit Course</p>
+<div class="edit">
+
+    <form (ngSubmit)="onSubmit()">
+        <div style="margin : 10px" class="form-group">
+            <input type="text" class="form-control text-center" id="courseName" [(ngModel)]="course.name"
+                name="courseName" placeholder="Enter Course name">
+        </div>
+
+        <div style="margin : 10px" class="form-group">
+            <input type="text" class="form-control text-center" id="courseDuration" [(ngModel)]="course.duration"
+                name="courseDuration" placeholder="Enter the Course duration">
+        </div>
+
+        <div style="margin : 10px" class="form-group">
+            <input type="text" class="form-control text-center" id="courseTiming" [(ngModel)]="course.timing"
+                name="courseTiming" placeholder="Enter the Course timing">
+        </div>
+
+        <div style="margin : 10px" class="form-group">
+            <input type="text" class="form-control text-center" id="courseEnrolled" [(ngModel)]="course.enrolled"
+                name="courseEnrolled" placeholder="Enter number of students enrolled for the course">
+        </div>
+
+        <div>
+            <input type="text" style="margin : 10px ; height: 100px ; width: 300px;" class="form-control text-center"
+                id="courseDescription" [(ngModel)]="course.description" name="courseDescription"
+                placeholder="Enter Course description">
+        </div>
+
+        <button id="updateCourse" class="btn btn-success" type="submit">Update Course</button>
+    </form>
+</div>
