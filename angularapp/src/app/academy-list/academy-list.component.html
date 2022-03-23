@@ -1,0 +1,30 @@
+<h2 class="text-center">Academy List</h2>
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Academy Name</th>
+                <th>Contact Number</th>
+                <th>Email Id</th>
+                <th>Academy Location</th>
+                <th>Academy Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let academy of academies">
+                <td>{{academy.academyName}}</td>
+                <td>{{academy.contactNumber}}</td>
+                <td>{{academy.emailId}}</td>
+                <td>{{academy.academyLocation}}</td>
+                <td>{{academy.academyDescription}}</td>
+                <td>
+                    <button (click) = "editInstitute(academy.id)" class="btn btn-info">Edit</button>
+                    <button (click) = "deleteInstitute(academy.id)" class="btn btn-danger" style="margin-left: 10px">Delete</button>
+                    <button (click) = "academyDetails(academy.id)" class="btn btn-info" style="margin-left: 10px">View</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>

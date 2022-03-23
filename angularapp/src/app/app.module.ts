@@ -13,6 +13,10 @@ import {AdminStudentComponent } from './admin-student/admin-student.component';
 import { EditStudentComponent } from './edit-student/edit-student.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AuthGuard } from './auth.guard';
+import { AddAcademyComponent } from './add-academy/add-academy.component';
+import { EditAcademyComponent } from './edit-academy/edit-academy.component';
+import { AcademyDetailsComponent } from './academy-details/academy-details.component';
+import { AcademyListComponent } from './academy-list/academy-list.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { AuthGuard } from './auth.guard';
     UserDashbordComponent,
     AdminStudentComponent,
     EditStudentComponent,
-    AddStudentComponent
+    AddStudentComponent,
+    AddAcademyComponent,
+    EditAcademyComponent,
+    AcademyDetailsComponent,
+    AcademyListComponent,
   ],
   imports: [
     BrowserModule,
