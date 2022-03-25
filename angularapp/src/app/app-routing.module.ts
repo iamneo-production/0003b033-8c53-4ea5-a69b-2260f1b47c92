@@ -12,6 +12,7 @@ import { CourseDetailsComponent } from './course-details/course-details.componen
 import { CourseListComponent } from './course-list/course-list.component';
 import { AddCourseComponent } from './course-add/course-add.component';
 import { EditCourseComponent } from './course-edit/course-edit.component';
+import { UserCourseComponent } from './user-course/user-course.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/user/login', pathMatch:'full'},
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path: 'admin/addcourse', component: AddCourseComponent},
   {path: 'admin/editcourse/:id', component: EditCourseComponent},
   {path: 'admin/viewcourse/:id' , component: CourseDetailsComponent},
+  {path: 'user/courses', component: UserCourseComponent}
 ];
 
 @NgModule({
