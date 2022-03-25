@@ -44,4 +44,8 @@ export class AddCourseComponent implements OnInit {
     this.router.navigate(['admin/addcourse'])
   }
 
+  viewStudent(){
+    this.router.navigate(['admin/viewStudent'])
+  }
+
 }

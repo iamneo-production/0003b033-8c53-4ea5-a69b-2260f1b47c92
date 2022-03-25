@@ -45,4 +45,8 @@ export class EditCourseComponent implements OnInit {
     this.router.navigate(['admin/addcourse'])
   }
 
+  viewStudent(){
+    this.router.navigate(['admin/viewStudent'])
+  }
+
 }
