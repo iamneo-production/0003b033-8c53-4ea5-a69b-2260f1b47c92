@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import com.examly.springapp.model.Academy;
 @Repository
-public interface AdminRepository extends JpaRepository<Academy, Long>{
+public interface AcademyRepository extends JpaRepository<Academy, Long>{
 
 
 }

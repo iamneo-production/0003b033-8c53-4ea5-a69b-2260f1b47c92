@@ -24,6 +24,10 @@ export class AdminDashbordComponent implements OnInit {
   { 
     this.router.navigate(['admin/viewStudent']);
   }
+  viewAcademy()
+  {
+    this.router.navigate(['admin/academies'])
+  }
   ngOnInit(): void {
     this.retriveStudent();
   }

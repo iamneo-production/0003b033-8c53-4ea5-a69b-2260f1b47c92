@@ -25,7 +25,7 @@ export class AcademyListComponent implements OnInit {
   }
 
   editInstitute(id: number){
-    this.router.navigate(['editinstitute',id])
+    this.router.navigate(['admin/editinstitute',id])
 
   }
 
@@ -38,7 +38,15 @@ export class AcademyListComponent implements OnInit {
   }
 
   academyDetails(id: number){
-    this.router.navigate(['viewinstitute',id])
+    this.router.navigate(['admin/viewinstitute',id])
+  }
+
+  addInstitute(){
+    this.router.navigate(['admin/addinstitute'])
+  }
+
+  selectcourse(){
+    this.router.navigate(['admin/addinstitute'])
   }
 
 }

@@ -1,17 +1,18 @@
 .navbar{
-    margin-left: 10%;
+    margin:auto;
     width:80%;
     height: 65px;
     color:white;
     background-color: brown;
-    align-items: center;
+    text-align: center;
+    padding-top: 1px;
 }
 .formbody{
     border:2px solid black;
     margin-left: 10%;
     margin-top: 1%;
     width:79.7%;
-    height: 550px;
+    height: 580px;
     color:white;
     background-image: linear-gradient(rgb(1, 238, 255), rgb(32, 74, 109));
     
