@@ -13,6 +13,11 @@ import {AdminStudentComponent } from './admin-student/admin-student.component';
 import { EditStudentComponent } from './edit-student/edit-student.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AuthGuard } from './auth.guard';
+import { CourseListComponent } from './course-list/course-list.component';
+import { AddCourseComponent } from './course-add/course-add.component';
+import { EditCourseComponent } from './course-edit/course-edit.component';
+import { CourseDetailsComponent } from './course-details/course-details.component';
+import { UserCourseComponent } from './user-course/user-course.component';
 
 import { AddAcademyComponent } from './add-academy/add-academy.component';
 import { EditAcademyComponent } from './edit-academy/edit-academy.component';
@@ -29,10 +34,19 @@ import { AcademyListComponent } from './academy-list/academy-list.component';
     AdminStudentComponent,
     EditStudentComponent,
     AddStudentComponent,
+
     AddAcademyComponent,
     EditAcademyComponent,
     AcademyDetailsComponent,
-    AcademyListComponent
+    AcademyListComponent,
+
+    AppComponent,
+    CourseListComponent,
+    AddCourseComponent,
+    EditCourseComponent,
+    CourseDetailsComponent,
+    UserCourseComponent
+
   ],
   imports: [
     BrowserModule,
