@@ -8,10 +8,10 @@ import { Course } from './course';
 })
 export class CourseService {
 
-  private baseURL = "https://8080-ecffeaecaaceddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/viewCourse"
-  private addCourseURL = "https://8080-ecffeaecaaceddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/addCourse"
-  private editCourseURL = "https://8080-ecffeaecaaceddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/editCourse"
-  private deleteCourseURL = "https://8080-ecffeaecaaceddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/deleteCourse"
+  private baseURL = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/viewCourse"
+  private addCourseURL = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/addCourse"
+  private editCourseURL = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/editCourse"
+  private deleteCourseURL = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/deleteCourse"
 
   constructor(private httpClient: HttpClient) { }
 
