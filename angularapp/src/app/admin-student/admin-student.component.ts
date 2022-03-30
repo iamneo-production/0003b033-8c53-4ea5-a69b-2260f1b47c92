@@ -20,6 +20,10 @@ export class AdminStudentComponent implements OnInit {
   {
   this.StudentService.retriveStudent().subscribe(data=>(this.student=data))
  }
+ viewCourses()
+ {
+   this.router.navigate(['admin/courses']);
+ }
  addStudent()
   { 
     this.router.navigate(['admin/addStudent']);

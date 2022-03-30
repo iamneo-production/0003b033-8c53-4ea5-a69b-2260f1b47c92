@@ -17,7 +17,10 @@ export class AddCourseComponent implements OnInit {
   constructor(private courseService: CourseService,
     private router: Router , private http: HttpClient) { }
 
-  
+    viewCourses()
+    {
+      this.router.navigate(['admin/courses']);
+    }
 
   ngOnInit(): void {
   }

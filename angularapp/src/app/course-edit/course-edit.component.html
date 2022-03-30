@@ -3,9 +3,9 @@
     <a id="course" class="nav-link nav-item" (click)="goToCourseList()" routerLinkActive="active">Courses</a>
     <a id="adminStudents" class="nav-link nav-item" (click)="viewStudent()" routerLinkActive="active">Students</a>
   </ul>
-<p>Edit Course</p>
-<div class="edit">
 
+<div class="edit">
+<p>Edit Course</p>
     <form (ngSubmit)="onSubmit()">
         <div style="margin : 10px" class="form-group">
             <input type="text" class="form-control text-center" id="courseName" [(ngModel)]="course.name"

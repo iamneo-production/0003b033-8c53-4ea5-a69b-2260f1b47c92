@@ -23,11 +23,11 @@ const routes: Routes = [
 {path:'admin/viewStudent',canActivate : [AuthGuard],component:AdminStudentComponent},
 {path:'admin/addStudent',canActivate : [AuthGuard],component:AddStudentComponent},
 {path:'admin/editStudent/:id',canActivate : [AuthGuard],component:EditStudentComponent},
-{path: 'admin/courses', component: CourseListComponent},
-  {path: 'admin/addcourse', component: AddCourseComponent},
-  {path: 'admin/editcourse/:id', component: EditCourseComponent},
-  {path: 'admin/viewcourse/:id' , component: CourseDetailsComponent},
-  {path: 'user/courses', component: UserCourseComponent}
+{path: 'admin/courses',canActivate : [AuthGuard], component: CourseListComponent},
+  {path: 'admin/addcourse',canActivate : [AuthGuard], component: AddCourseComponent},
+  {path: 'admin/editcourse/:id',canActivate : [AuthGuard], component: EditCourseComponent},
+  {path: 'admin/viewcourse/:id' ,canActivate : [AuthGuard], component: CourseDetailsComponent},
+  {path: 'user/courses',canActivate : [AuthGuard], component: UserCourseComponent}
 ];
 
 @NgModule({
