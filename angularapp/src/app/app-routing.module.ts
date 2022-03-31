@@ -24,7 +24,7 @@ const routes: Routes = [
 {path:'admin/viewStudent',canActivate : [AuthGuard],component:AdminStudentComponent},
 {path:'admin/addStudent',canActivate : [AuthGuard],component:AddStudentComponent},
 {path:'admin/editStudent/:id',canActivate : [AuthGuard],component:EditStudentComponent},
-{path:'user/admission',canActivate : [AuthGuard],component:AdmissionComponent}
+{path:'user/admission',canActivate : [AuthGuard],component:AdmissionComponent},
 {path: 'admin/courses',canActivate : [AuthGuard], component: CourseListComponent},
   {path: 'admin/addcourse',canActivate : [AuthGuard], component: AddCourseComponent},
   {path: 'admin/editcourse/:id',canActivate : [AuthGuard], component: EditCourseComponent},

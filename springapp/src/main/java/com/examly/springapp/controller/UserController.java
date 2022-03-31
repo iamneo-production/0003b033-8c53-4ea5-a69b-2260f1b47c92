@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-import com.example.demo.exception.ResourceNotFoundException;
-import com.example.demo.model.AdmissionModel;
-import com.example.demo.repository.AdmissionRepo;
+import com.examly.springapp.exception.ResourceNotFoundException;
+import com.examly.springapp.model.AdmissionModel;
+import com.examly.springapp.repository.AdmissionRepository;
 
 @CrossOrigin(origins = "https://8081-feedeaaecceeccaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @RestController
