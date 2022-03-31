@@ -13,6 +13,7 @@ import {AdminStudentComponent } from './admin-student/admin-student.component';
 import { EditStudentComponent } from './edit-student/edit-student.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AuthGuard } from './auth.guard';
+import { AdmissionComponent } from './admission/admission.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AuthGuard } from './auth.guard';
     UserDashbordComponent,
     AdminStudentComponent,
     EditStudentComponent,
-    AddStudentComponent
+    AddStudentComponent,
+    AdmissionComponent
   ],
   imports: [
     BrowserModule,

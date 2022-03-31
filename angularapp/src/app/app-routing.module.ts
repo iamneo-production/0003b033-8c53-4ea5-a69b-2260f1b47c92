@@ -8,6 +8,7 @@ import { AuthGuard } from './auth.guard';
 import { AdminStudentComponent } from './admin-student/admin-student.component';
 import { EditStudentComponent } from './edit-student/edit-student.component';
 import { AddStudentComponent } from './add-student/add-student.component';
+import { AdmissionComponent } from './admission/admission.component';
 const routes: Routes = [
   {path:'',redirectTo:'/user/login', pathMatch:'full'},
   {path:'user/signup',component:SignupComponent},
@@ -17,6 +18,7 @@ const routes: Routes = [
 {path:'admin/viewStudent',canActivate : [AuthGuard],component:AdminStudentComponent},
 {path:'admin/addStudent',canActivate : [AuthGuard],component:AddStudentComponent},
 {path:'admin/editStudent/:id',canActivate : [AuthGuard],component:EditStudentComponent},
+{path:'user/admission',canActivate : [AuthGuard],component:AdmissionComponent}
 ];
 
 @NgModule({
