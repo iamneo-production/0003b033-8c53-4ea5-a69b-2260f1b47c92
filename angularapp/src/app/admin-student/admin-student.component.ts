@@ -20,6 +20,10 @@ export class AdminStudentComponent implements OnInit {
   {
   this.StudentService.retriveStudent().subscribe(data=>(this.student=data))
  }
+ viewCourses()
+ {
+   this.router.navigate(['admin/courses']);
+ }
  addStudent()
   { 
     this.router.navigate(['admin/addStudent']);
@@ -37,9 +41,11 @@ editStudent(id:number)
 }
   deleteStudent(studentID:number)
   {
-    this.StudentService.deleteStudent(studentID).subscribe(data=>{
-      console.log(data);
-      this.retriveStudent();
-      })
+    if(window.confirm('Are sure you want to delete this item ?')){
+      this.StudentService.deleteStudent(studentID).subscribe(data=>{
+        alert("Student sucessfully deleted");
+        this.retriveStudent();
+        })
+     }   
   }
 }

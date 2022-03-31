@@ -14,6 +14,11 @@ import { EditStudentComponent } from './edit-student/edit-student.component';
 import { AddStudentComponent } from './add-student/add-student.component';
 import { AuthGuard } from './auth.guard';
 import { AdmissionComponent } from './admission/admission.component';
+import { CourseListComponent } from './course-list/course-list.component';
+import { AddCourseComponent } from './course-add/course-add.component';
+import { EditCourseComponent } from './course-edit/course-edit.component';
+import { CourseDetailsComponent } from './course-details/course-details.component';
+import { UserCourseComponent } from './user-course/user-course.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,12 @@ import { AdmissionComponent } from './admission/admission.component';
     AdminStudentComponent,
     EditStudentComponent,
     AddStudentComponent,
-    AdmissionComponent
+    AdmissionComponent,
+    CourseListComponent,
+    AddCourseComponent,
+    EditCourseComponent,
+    CourseDetailsComponent,
+    UserCourseComponent
   ],
   imports: [
     BrowserModule,

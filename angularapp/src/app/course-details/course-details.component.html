@@ -1,0 +1,28 @@
+<ul class="navbar-nav">
+    <a id="home" class="nav-link nav-item active" aria-current="page" href=" ">Academy</a>
+    <a id="course" class="nav-link nav-item" (click)="goToCourseList()" routerLinkActive="active">Courses</a>
+    <a id="adminStudents" class="nav-link nav-item" (click)="viewStudent()" routerLinkActive="active">Students</a>
+  </ul>
+
+<div class="coursedetails">
+    <p>Course Details</p>
+    <div>
+        <label><b>Course Name : </b></label> {{course.name}}
+    </div>
+
+    <div>
+        <label><b>Course Duration : </b></label> {{course.duration}}
+    </div>
+
+    <div>
+        <label><b>Course Timing : </b></label> {{course.timing}}
+    </div>
+
+    <div>
+        <label><b>Number of students : </b></label> {{course.enrolled}}
+    </div>
+
+    <div>
+        <label><b>Course Description : </b></label> {{course.description}}
+    </div>
+</div>
