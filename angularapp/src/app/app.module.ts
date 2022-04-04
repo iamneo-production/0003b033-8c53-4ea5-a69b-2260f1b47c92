@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import {SignupComponent} from './signup/signup.component';
 import { LoginComponent } from './login/login.component';
 import { AdminDashbordComponent } from './admin-dashbord/admin-dashbord.component';
-import { UserDashbordComponent } from './user-dashbord/user-dashbord.component';
 import {AdminStudentComponent } from './admin-student/admin-student.component';
 import { EditStudentComponent } from './edit-student/edit-student.component';
 import { AddStudentComponent } from './add-student/add-student.component';
@@ -19,6 +18,7 @@ import { AddCourseComponent } from './course-add/course-add.component';
 import { EditCourseComponent } from './course-edit/course-edit.component';
 import { CourseDetailsComponent } from './course-details/course-details.component';
 import { UserCourseComponent } from './user-course/user-course.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +26,6 @@ import { UserCourseComponent } from './user-course/user-course.component';
     SignupComponent,
     LoginComponent,
     AdminDashbordComponent,
-    UserDashbordComponent,
     AdminStudentComponent,
     EditStudentComponent,
     AddStudentComponent,
@@ -35,7 +34,8 @@ import { UserCourseComponent } from './user-course/user-course.component';
     AddCourseComponent,
     EditCourseComponent,
     CourseDetailsComponent,
-    UserCourseComponent
+    UserCourseComponent,
+    UserDashboardComponent
   ],
   imports: [
     BrowserModule,
