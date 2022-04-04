@@ -1,0 +1,61 @@
+.navbar{
+    margin-top: 1.5%;
+    margin-left: 10%;
+    width:79.9%;
+    height: 40px;
+    color:white;
+    background-color: rgba(2, 105, 62, 0.747);
+    box-shadow: 0 0 3px 1px black;
+    border: 1px solid black;
+    
+}
+#navlink1{
+    float: left;
+    text-decoration: none;
+    font-size: 27px;
+}
+#adminAcademy{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left:18%;
+}
+#userCourses{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left:7%;
+    
+}
+#adminStudents{
+    font-family: Arial, Helvetica, sans-serif;  
+    text-decoration: none;
+    font-size: 25px;
+    margin-left:7%;
+   
+}
+#logout{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    float: right;
+    margin-right:7%;
+    
+}
+a:hover{
+cursor: pointer;
+color: rgba(241, 245, 236, 0.993);
+}
+
+.formbody{
+    text-align: center;
+    border:2px solid rgb(214, 133, 133);
+    margin-left: 10%;
+    margin-top: 1%;
+    width:79.7%;
+    height: 550px;
+    color:white;
+    background-image: linear-gradient(rgb(27, 167, 177), rgb(20, 102, 165));
+    box-shadow: 0 0 3px 1px black;
+    
+}

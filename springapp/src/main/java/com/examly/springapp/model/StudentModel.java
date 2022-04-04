@@ -1,16 +1,19 @@
 package com.examly.springapp.model;
-
 import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
 @Table(name="student_model")
 public class StudentModel {
 	@Id
+	@Column(name="id")
 	private int studentID;
 	@Column(name="student_name")
 	private String studentName;
@@ -22,6 +25,9 @@ public class StudentModel {
 	private String mobile;
 	@Column(name="age")
 	private int age;
+	
+	 @OneToOne(mappedBy = "sm")
+	 private AdmissionModel adm;
 	
 	
 	public StudentModel(int studentID, String studentName, Date studentDOB, String address, String mobile, int age) {
