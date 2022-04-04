@@ -8,10 +8,10 @@ import { StudentModel } from './student-model';
   providedIn: 'root'
 })
 export class StudentService {
-  baseUrl='https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/viewStudent';
-  baseUrl1='https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/addStudent';
-  baseUrl2='https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/deleteStudent';
-  baseUrl3='https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/editStudent';
+  baseUrl='https://8080-feedeaaecceeccaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/viewStudent';
+  baseUrl1='https://8080-feedeaaecceeccaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/addStudent';
+  baseUrl2='https://8080-feedeaaecceeccaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/deleteStudent';
+  baseUrl3='https://8080-feedeaaecceeccaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/editStudent';
   constructor(private httpClient:HttpClient) { }
   retriveStudent():Observable<StudentModel[]>{
     return this.httpClient.get<StudentModel[]>(this.baseUrl);
