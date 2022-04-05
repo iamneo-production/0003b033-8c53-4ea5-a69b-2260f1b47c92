@@ -1,0 +1,30 @@
+<nav class="navbar">
+    <h1>ADD ACADEMY</h1>
+</nav>
+<div class="formbody">
+    <form (ngSubmit)="onSubmit()">
+
+        <input type="text" class="form-control text-center" id="academyName" [(ngModel)]="academy.academyName"
+            name="academyName" placeholder="Enter Academy name">
+
+        <input type="tel" class="form-control text-center" id="contactNumber" [(ngModel)]="academy.contactNumber"
+            name="contactNumber" placeholder="Enter the contact number">
+            
+        <input type="file" class="form-control" id="imageUrl" [(ngModel)]="academy.imageUrl" name="imageUrl"
+            placeholder="Enter the Academy Image Url">
+            
+        <input type="email" class="form-control text-center" id="emailId" [(ngModel)]="academy.emailId" name="emailId"
+            placeholder="Enter the academy email">
+
+        <input type="text" class="form-control text-center" id="academyLocation"
+            [(ngModel)]="academy.academyLocation" name="academyLocation" placeholder="Enter Academy Location">
+
+        <input type="text" style="height: 100px ; width: 300px;" class="form-control text-center"
+            id="academyDescription" [(ngModel)]="academy.academyDescription" name="academyDescription"
+            placeholder="Enter Academy description">
+
+
+        <button id="addAcademy" class="btn btn-success" type="submit">Add Academy</button>
+    </form>
+
+</div>

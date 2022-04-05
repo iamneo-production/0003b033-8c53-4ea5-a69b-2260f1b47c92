@@ -1,0 +1,27 @@
+<nav class="navbar">
+    <a (click)="viewAcademy()" id="adminAcademy">Academy</a>
+    <a (click)="viewCourses()" id="adminCourse">Course</a>
+    <a (click)="viewStudent()" id="adminStudents">Students</a>
+    <a (click)="logout()" id="logout">Logout</a>
+    
+</nav>
+<div class="academy-details">
+    <h1> View Academy Details </h1>
+        <a><label><b>Academy Name : </b></label> {{academy.academyName}}</a>
+
+    
+        <label><b>Contact Number : </b></label> {{academy.contactNumber}}
+    
+
+    <!--<div class="academy-details-items">
+        <label><b>Image Url : </b></label> {{academy.imageUrl}}
+    </div>-->
+
+    
+        <label><b>Email Id : </b></label> {{academy.emailId}}
+    
+
+    
+        <label><b>Academy Description : </b></label> {{academy.academyDescription}}
+    
+</div>

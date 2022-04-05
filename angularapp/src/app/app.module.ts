@@ -20,6 +20,11 @@ import { CourseDetailsComponent } from './course-details/course-details.componen
 import { UserCourseComponent } from './user-course/user-course.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
+import { AddAcademyComponent } from './add-academy/add-academy.component';
+import { EditAcademyComponent } from './edit-academy/edit-academy.component';
+import { AcademyDetailsComponent } from './academy-details/academy-details.component';
+import { AcademyListComponent } from './academy-list/academy-list.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +35,10 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
     EditStudentComponent,
     AddStudentComponent,
     AdmissionComponent,
+    AddAcademyComponent,
+    EditAcademyComponent,
+    AcademyDetailsComponent,
+    AcademyListComponent,
     CourseListComponent,
     AddCourseComponent,
     EditCourseComponent,
