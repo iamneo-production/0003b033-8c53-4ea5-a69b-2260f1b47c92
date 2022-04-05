@@ -34,6 +34,7 @@ export class AdminDashbordComponent implements OnInit {
   viewCourses()
   {
     this.router.navigate(['admin/courses']);
+  }
   viewAcademy()
   {
     this.router.navigate(['admin/academies'])

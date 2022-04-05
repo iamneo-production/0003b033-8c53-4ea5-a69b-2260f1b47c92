@@ -21,8 +21,8 @@ import com.examly.springapp.model.Academy;
 import com.examly.springapp.repository.AcademyRepository;
 
 @RestController
-@CrossOrigin(origins = "https://8081-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io")
-@RequestMapping("/admin/")
+@CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
+@RequestMapping("/admin")
 public class AcademyController {
 
 		@Autowired

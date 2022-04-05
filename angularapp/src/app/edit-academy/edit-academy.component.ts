@@ -30,7 +30,7 @@ export class EditAcademyComponent implements OnInit {
   
 
   goToAcademyList(){
-    this.router.navigate(['/academies'])
+    this.router.navigate(['admin/academies'])
 
   }
 
