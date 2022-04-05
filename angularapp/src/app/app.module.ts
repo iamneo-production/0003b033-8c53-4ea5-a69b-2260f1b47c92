@@ -23,6 +23,7 @@ import { AddAcademyComponent } from './add-academy/add-academy.component';
 import { EditAcademyComponent } from './edit-academy/edit-academy.component';
 import { AcademyDetailsComponent } from './academy-details/academy-details.component';
 import { AcademyListComponent } from './academy-list/academy-list.component';
+import { UserViewComponent } from './user-view/user-view.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { AcademyListComponent } from './academy-list/academy-list.component';
     AddCourseComponent,
     EditCourseComponent,
     CourseDetailsComponent,
-    UserCourseComponent
+    UserCourseComponent,
+    UserViewComponent
 
   ],
   imports: [

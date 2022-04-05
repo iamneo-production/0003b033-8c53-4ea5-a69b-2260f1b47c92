@@ -19,6 +19,7 @@ import { CourseListComponent } from './course-list/course-list.component';
 import { AddCourseComponent } from './course-add/course-add.component';
 import { EditCourseComponent } from './course-edit/course-edit.component';
 import { UserCourseComponent } from './user-course/user-course.component';
+import { UserViewComponent } from './user-view/user-view.component';
 
 
 const routes: Routes = [
@@ -35,11 +36,14 @@ const routes: Routes = [
   {path: 'admin/addinstitute', canActivate : [AuthGuard],component: AddAcademyComponent},
   {path: 'admin/editinstitute/:id', canActivate : [AuthGuard], component: EditAcademyComponent},
   {path: 'admin/viewinstitute/:id' , canActivate : [AuthGuard], component:AcademyDetailsComponent},
+
+  {path: 'user/courseview' ,component:UserViewComponent },
+
 {path: 'admin/courses', component: CourseListComponent},
   {path: 'admin/addcourse', component: AddCourseComponent},
   {path: 'admin/editcourse/:id', component: EditCourseComponent},
   {path: 'admin/viewcourse/:id' , component: CourseDetailsComponent},
-  {path: 'user/courses', component: UserCourseComponent}
+  {path: 'user/viewcourses', component: UserCourseComponent}
 ];
 
 @NgModule({

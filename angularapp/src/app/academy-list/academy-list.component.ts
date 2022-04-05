@@ -45,8 +45,6 @@ export class AcademyListComponent implements OnInit {
     this.router.navigate(['admin/addinstitute'])
   }
 
-  selectcourse(){
-    this.router.navigate(['admin/addinstitute'])
-  }
+  
 
 }
