@@ -12,7 +12,7 @@ import com.examly.springapp.model.UserModel;
 import com.examly.springapp.repository.UserRepository;
 import com.examly.springapp.model.LoginModel;
 
-@CrossOrigin(origins = "https://8081-feedeaaecceeccaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
+@CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @RestController
 @RequestMapping("/user")
 public class AuthController {
