@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins = "https://8081-ecffeaecaaceddbefefcfadeceafbaedad.examlyiopb.examly.io")
+@CrossOrigin(origins = "https://8081-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @RestController
 @RequestMapping("/admin")
 public class CourseController {

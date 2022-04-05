@@ -10,6 +10,15 @@
     background-image: linear-gradient(rgb(1, 238, 255), rgb(32, 74, 109));
     box-shadow: 0 0 3px 1px black;
 }
+button{
+  border-radius: 8px;
+  background-color:black;
+  color:white;
+}
+button:hover{
+  background-color:brown ;
+}
+
 .table{
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -34,13 +43,12 @@
 .navbar-nav{
   margin-top: 1.5%;
   margin-left: 10%;
-  width:79.9%;
+  width:77.0%;
   height: 40px;
   color:white;
-  background-color: black;
+  background-color: brown;
   box-shadow: 0 0 3px 1px black;
   border: 1px solid black;
-  
 }
 
 #home{
@@ -49,7 +57,10 @@
   font-size: 25px;
   margin-left:30%;
 }
-
+a:hover{
+  cursor: pointer;
+  color: rgba(0, 204, 255, 0.993);
+  }
 #course{
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;

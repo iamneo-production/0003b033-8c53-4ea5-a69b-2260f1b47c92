@@ -1,5 +1,11 @@
-<h2 style="text-align: center;">Academy List</h2>
+<nav class="navbar">
+    <a (click)="viewAcademy()" id="adminAcademy">Academy</a>
+    <a (click)="viewCourses()" id="adminCourse">Course</a>
+    <a (click)="viewStudent()" id="adminStudents">Students</a>
+    <a (click)="logout()" id="logout">Logout</a>
+</nav>
 <div class="formbody">
+    <h2 style="text-align: center;">Academy List</h2>
     <table class="table">
         <thead>
             <tr>
@@ -25,5 +31,5 @@
             </tr>
         </tbody>
     </table>
-    <button (click) = "addInstitute()" id="Add-Institute">Add-Institute</button>
+    <button style="float: right;" (click) = "addInstitute()" id="Add-Institute">Add-Institute</button>
 </div>

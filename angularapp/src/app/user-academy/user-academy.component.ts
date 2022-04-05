@@ -5,10 +5,10 @@ import { AcademyService } from '../academy.service';
 
 @Component({
   selector: 'app-user-view',
-  templateUrl: './user-view.component.html',
-  styleUrls: ['./user-view.component.css']
+  templateUrl: './user-academy.component.html',
+  styleUrls: ['./user-academy.component.css']
 })
-export class UserViewComponent implements OnInit {
+export class UserAcademyComponent implements OnInit {
 
   academies: Academy[]
 
@@ -26,7 +26,7 @@ export class UserViewComponent implements OnInit {
 }
 
 selectcourse(){
-  this.router.navigate(['user/courses'])
+  this.router.navigate(['user/viewcourses'])
 }
 
 

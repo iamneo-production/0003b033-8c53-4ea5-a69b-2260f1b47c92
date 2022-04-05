@@ -16,7 +16,14 @@
     font-size: 25px;
     margin-left:30%;
 }
-
+button{
+    border-radius: 8px;
+    background-color:black;
+    color:white;
+  }
+  button:hover{
+    background-color:brown ;
+  }
 #adminCourse{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
@@ -34,6 +41,7 @@
     background-color: white;
     border-radius: 5px;
     font-weight: bold;
+    color:black;
 }
 #logout{
     font-family: Arial, Helvetica, sans-serif;
@@ -42,10 +50,9 @@
     float: right;
 }
 a:hover{
-cursor: pointer;
-color: rgba(0, 204, 255, 0.993);
-}
-
+    cursor: pointer;
+    color: rgba(0, 204, 255, 0.993);
+    }
 .formbody{
     text-align: center;
     border:2px solid black;

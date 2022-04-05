@@ -40,11 +40,27 @@ export class AcademyListComponent implements OnInit {
   academyDetails(id: number){
     this.router.navigate(['admin/viewinstitute',id])
   }
-
+  logout()
+  { 
+    sessionStorage.clear()
+    this.router.navigate(['user/login']);
+  }
   addInstitute(){
     this.router.navigate(['admin/addinstitute'])
   }
 
   
+  viewStudent()
+  { 
+    this.router.navigate(['admin/viewStudent']);
+  }
+  viewCourses()
+  {
+    this.router.navigate(['admin/courses']);
+  }
+  viewAcademy()
+  {
+    this.router.navigate(['admin/academies'])
+  }
 
 }

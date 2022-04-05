@@ -33,7 +33,7 @@ export class AddAcademyComponent implements OnInit {
   }
 
   goToAcademyList(){
-    this.router.navigate(['/academies'])
+    this.router.navigate(['admin/academies'])
 
   }
   onSubmit() {
