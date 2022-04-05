@@ -38,6 +38,14 @@ export class EditStudentComponent implements OnInit {
     sessionStorage.clear();
     this.router.navigate(['user/login']);
   }
+  viewCourses()
+  {
+    this.router.navigate(['admin/courses']);
+  }
+  viewAcademy()
+  {
+    this.router.navigate(['admin/academies'])
+  }
   viewStudent()
   { 
     this.router.navigate(['admin/viewStudent']);

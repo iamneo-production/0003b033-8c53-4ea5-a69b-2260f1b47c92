@@ -46,7 +46,12 @@ export class AddCourseComponent implements OnInit {
   addCourse(){
     this.router.navigate(['admin/addcourse'])
   }
-
+  
+  viewAcademy()
+  {
+    this.router.navigate(['admin/academies'])
+  }
+  
   viewStudent(){
     this.router.navigate(['admin/viewStudent'])
   }

@@ -24,6 +24,7 @@ import { AddAcademyComponent } from './add-academy/add-academy.component';
 import { EditAcademyComponent } from './edit-academy/edit-academy.component';
 import { AcademyDetailsComponent } from './academy-details/academy-details.component';
 import { AcademyListComponent } from './academy-list/academy-list.component';
+import { UserAcademyComponent } from './user-academy/user-academy.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { AcademyListComponent } from './academy-list/academy-list.component';
     EditCourseComponent,
     CourseDetailsComponent,
     UserCourseComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    UserAcademyComponent
   ],
   imports: [
     BrowserModule,
