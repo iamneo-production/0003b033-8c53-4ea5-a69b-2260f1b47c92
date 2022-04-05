@@ -25,10 +25,19 @@ this.StudentService.createStudent(this.student).subscribe(data=>{console.log(dat
     this.createStudent();
     alert("Student added successfully");
   }
+  viewCourses()
+  {
+    this.router.navigate(['admin/courses']);
+  }
+  viewAcademy()
+  {
+    this.router.navigate(['admin/academies'])
+  }
   viewStudent()
   { 
     this.router.navigate(['admin/viewStudent']);
   }
+  
 
   addStudentForm=new FormGroup({
 	  studentID:new FormControl('',[Validators.required]),
