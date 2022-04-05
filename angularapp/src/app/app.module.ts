@@ -45,6 +45,7 @@ import { UserAcademyComponent } from './user-academy/user-academy.component';
     EditCourseComponent,
     CourseDetailsComponent,
     UserCourseComponent,
+
     UserDashboardComponent,
     UserAcademyComponent
   ],

@@ -36,6 +36,11 @@ private retriveCourses()
  {
    this.router.navigate(['user/courses']);
  }
+
+ viewAcademy()
+ {
+  this.router.navigate(['user/viewcourses']);
+ }
  ngOnInit(): void {
    this.retriveStudent();
    this.retriveCourses();

@@ -1,0 +1,93 @@
+.navbar{
+    margin-top: 1.5%;
+    margin-left: 10%;
+    width:79.9%;
+    height: 40px;
+    color:white;
+    background-color: brown;
+    box-shadow: 0 0 3px 1px black;
+    border: 1px solid black;
+    
+}
+
+#adminAcademy{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left:30%;
+}
+
+#adminCourse{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    margin-left:7%;
+}
+#adminStudents{
+    font-family: Arial, Helvetica, sans-serif;  
+    text-decoration: none;
+    font-size: 25px;
+    margin-left:7%;
+}
+#Add-Institute{
+    height: 40px;
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#logout{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    float: right;
+}
+a:hover{
+cursor: pointer;
+color: rgba(0, 204, 255, 0.993);
+}
+
+.formbody{
+    text-align: center;
+    border:2px solid black;
+    margin-left: 10%;
+    margin-top: 1%;
+    width:79.7%;
+    height: 550px;
+    color:white;
+    background-image: linear-gradient(rgb(1, 238, 255), rgb(32, 74, 109));
+    box-shadow: 0 0 3px 1px black;
+}
+.table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  .table tr:nth-child(even){background-color: #b8df8c;}
+
+.table tr:hover {background-color: #ddd;}
+
+.table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(46, 165, 42);
+  color: white;
+}
+#editStudent{
+    width:25px;
+    margin-right:4px;
+}
+#editStudent:hover{
+    box-shadow: 0 0 3px 1px black;
+}
+#deleteStudent{
+    width:25px;
+    margin-left:4px;
+}
+#deleteStudent:hover{
+    box-shadow: 0 0 3px 1px black;
+}

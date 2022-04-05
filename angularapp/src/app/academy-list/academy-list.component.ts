@@ -48,6 +48,8 @@ export class AcademyListComponent implements OnInit {
   addInstitute(){
     this.router.navigate(['admin/addinstitute'])
   }
+
+  
   viewStudent()
   { 
     this.router.navigate(['admin/viewStudent']);

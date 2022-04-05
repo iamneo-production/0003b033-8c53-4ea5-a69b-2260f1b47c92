@@ -1,0 +1,26 @@
+<h2 style="text-align: center;">Academy List</h2>
+<div class="formbody">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Academy Name</th>
+                <th>Contact Number</th>
+                <th>Email Id</th>
+                <th>Academy Location</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let academy of academies" :hover style="background-color:transparent">
+                <td>{{academy.academyName}}</td>
+                <td>{{academy.contactNumber}}</td>
+                <td>{{academy.emailId}}</td>
+                <td>{{academy.academyLocation}}</td>
+                <td>
+                    <button (click) = "selectcourse()" style="margin-left: 10px">Select Course</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
