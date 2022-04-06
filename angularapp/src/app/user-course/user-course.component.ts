@@ -28,12 +28,18 @@ export class UserCourseComponent implements OnInit {
     this.router.navigate(['user/enrollCourse',id]) // need to change this accordingly!
   }
 
-  goToCourseList(){
-    this.router.navigate(['admin/courses'])
-  }
-
-  viewStudent(){
-    this.router.navigate(['admin/viewStudent'])
-  }
+  logout()
+ { 
+   sessionStorage.clear()
+   this.router.navigate(['user/login']);
+ }
+ addFeedback()
+ {
+   this.router.navigate(['user/feedback']);
+ }
+ viewAcademy()
+ {
+  this.router.navigate(['user/viewcourses']);
+ }
 
 }

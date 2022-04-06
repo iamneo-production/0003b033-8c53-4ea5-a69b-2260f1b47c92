@@ -10,25 +10,14 @@
     
 }
 
-#adminAcademy{
+#userAcademy{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 25px;
-    margin-left:30%;
+    margin-left:5%;
 }
 
-#adminCourse{
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 25px;
-    margin-left:7%;
-}
-#adminStudents{
-    font-family: Arial, Helvetica, sans-serif;  
-    text-decoration: none;
-    font-size: 25px;
-    margin-left:7%;
-}
+
 #Add-Institute{
     height: 40px;
     background-color: white;
@@ -45,7 +34,11 @@ a:hover{
 cursor: pointer;
 color: rgba(0, 204, 255, 0.993);
 }
-
+#navlink1{
+    float: left;
+    text-decoration: none;
+    font-size: 27px;
+}
 .formbody{
     text-align: center;
     border:2px solid black;

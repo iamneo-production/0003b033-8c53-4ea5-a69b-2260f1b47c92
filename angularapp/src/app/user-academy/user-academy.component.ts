@@ -24,9 +24,21 @@ export class UserAcademyComponent implements OnInit {
     
 
 }
-
-selectcourse(){
-  this.router.navigate(['user/viewcourses'])
+logout()
+ { 
+   sessionStorage.clear()
+   this.router.navigate(['user/login']);
+ }
+ addFeedback()
+ {
+   this.router.navigate(['user/feedback']);
+ }
+ viewAcademy()
+ {
+  this.router.navigate(['user/viewcourses']);
+ }
+selectCourse(){
+  this.router.navigate(['user/courses'])
 }
 
 

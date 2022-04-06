@@ -1,5 +1,12 @@
-<h2 style="text-align: center;">Academy List</h2>
+<nav class="navbar">
+    <a id="navlink1">Abacus academy</a>
+    <a (click)="viewAcademy()" id="userAcademy">Academy</a>
+    <a (click)="viewAcademy()" id="userAcademy">Enrolled Courses</a>
+    <a (click)="addFeedback()" id="userAcademy">Feedback</a>
+    <a (click)="logout()" id="logout">Logout</a>
+</nav>
 <div class="formbody">
+    <h2 style="text-align: center;">Academy List</h2>
     <table class="table">
         <thead>
             <tr>
@@ -17,7 +24,7 @@
                 <td>{{academy.emailId}}</td>
                 <td>{{academy.academyLocation}}</td>
                 <td>
-                    <button (click) = "selectcourse()" style="margin-left: 10px">Select Course</button>
+                    <button (click) = "selectCourse()" style="margin-left: 10px">Select Course</button>
                 </td>
 
             </tr>
