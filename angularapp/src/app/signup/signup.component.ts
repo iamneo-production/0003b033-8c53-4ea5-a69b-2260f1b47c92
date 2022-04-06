@@ -13,8 +13,15 @@ export class SignupComponent implements OnInit {
 
   createUser()
 {
-this.UsersignupService.createUser(this.user).subscribe(data=>{console.log(data)
-},error=>console.log(error));
+this.UsersignupService.createUser(this.user).subscribe(data=>{console.log(data);
+  alert("Signup success");
+},error=>{
+  if(error.status=400)
+  {
+    alert("User already exist with the email!");
+  }
+  console.log(error);
+});
 }
   onPasswordChange() {
     if (this.confirm_password.value == this.password1.value) {
@@ -57,7 +64,7 @@ this.UsersignupService.createUser(this.user).subscribe(data=>{console.log(data)
 
   signup(){
     this.createUser()
-    alert("Signup success")
+    
   }
 
   ngOnInit(): void {
