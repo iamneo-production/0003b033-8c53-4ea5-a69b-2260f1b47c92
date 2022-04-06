@@ -10,5 +10,7 @@ public interface UserRepository extends JpaRepository<UserModel, String>{
 
 	@Query("FROM UserModel WHERE email = ?1 and password=?2")
 	public UserModel findByEmailAndPassword(String email,String password);
+	@Query("FROM UserModel WHERE email = ?1")
+	public UserModel findByEmail(String email);
 
 }
