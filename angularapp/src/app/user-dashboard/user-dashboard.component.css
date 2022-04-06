@@ -14,18 +14,12 @@
     text-decoration: none;
     font-size: 27px;
 }
-#adminAcademy{
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    font-size: 25px;
-    margin-left:18%;
-}
 
 #userAcademy{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 25px;
-    margin-left:7%;
+    margin-left:5%;
     
 }
 #userCourses{
@@ -35,19 +29,13 @@
     margin-left:7%;
     
 }
-#adminStudents{
-    font-family: Arial, Helvetica, sans-serif;  
-    text-decoration: none;
-    font-size: 25px;
-    margin-left:7%;
-   
-}
+
 #logout{
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 25px;
     float: right;
-    margin-right:7%;
+    
     
 }
 a:hover{

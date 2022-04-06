@@ -19,6 +19,7 @@ import { EditCourseComponent } from './course-edit/course-edit.component';
 import { UserCourseComponent } from './user-course/user-course.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { UserAcademyComponent } from './user-academy/user-academy.component';
+import {UserFeedbackComponent} from './user-feedback/user-feedback.component'
 
 
 const routes: Routes = [
@@ -31,19 +32,18 @@ const routes: Routes = [
 {path:'admin/addStudent',canActivate : [AuthGuard],component:AddStudentComponent},
 {path:'admin/editStudent/:id',canActivate : [AuthGuard],component:EditStudentComponent},
 {path:'user/admission',canActivate : [AuthGuard],component:AdmissionComponent},
+{path:'user/feedback',canActivate : [AuthGuard],component:UserFeedbackComponent},
 {path: 'admin/courses',canActivate : [AuthGuard], component: CourseListComponent},
   {path: 'admin/addcourse',canActivate : [AuthGuard], component: AddCourseComponent},
   {path: 'admin/editcourse/:id',canActivate : [AuthGuard], component: EditCourseComponent},
   {path: 'admin/viewcourse/:id' ,canActivate : [AuthGuard], component: CourseDetailsComponent},
   {path: 'user/courses',canActivate : [AuthGuard], component: UserCourseComponent},
- {path: 'admin/academies', canActivate : [AuthGuard], component: AcademyListComponent},
+  {path: 'admin/academies', canActivate : [AuthGuard], component: AcademyListComponent},
   {path: 'admin/addinstitute', canActivate : [AuthGuard],component: AddAcademyComponent},
   {path: 'admin/editinstitute/:id', canActivate : [AuthGuard], component: EditAcademyComponent},
   {path: 'admin/viewinstitute/:id' , canActivate : [AuthGuard], component:AcademyDetailsComponent},
-
   {path: 'user/viewcourses' ,component:UserAcademyComponent },
-
-{path: 'admin/courses', component: CourseListComponent},
+  {path: 'admin/courses', component: CourseListComponent},
   {path: 'admin/addcourse', component: AddCourseComponent},
   {path: 'admin/editcourse/:id', component: EditCourseComponent},
   {path: 'admin/viewcourse/:id' , component: CourseDetailsComponent}

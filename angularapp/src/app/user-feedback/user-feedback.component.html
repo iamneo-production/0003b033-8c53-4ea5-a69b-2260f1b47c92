@@ -1,0 +1,31 @@
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<nav class="navbar">
+    <a id="navlink1">Abacus academy</a>
+    <a (click)="viewAcademy()" id="userAcademy">Academy</a>
+    <a (click)="viewAcademy()" id="userAcademy">Enrolled Courses</a>
+    <a (click)="addFeedback()" id="userAcademy">Feedback</a>
+    <a (click)="logout()" id="logout">Logout</a>
+</nav>
+
+<div class="add">
+    <p>Give Feedback</p>
+    <form (ngSubmit)="onSubmit()">
+        <div class="grid-container">
+            <div style="margin : 10px" class="form-group">
+            <input type="text" class="form-control text-center" id="email" [(ngModel)]="feedback.email"
+                name="email" placeholder="Enter Email">
+            </div>
+
+            <div style="margin : 10px" class="form-group">
+                <input type="text" class="form-control text-center" id="comments" [(ngModel)]="feedback.comments"
+                    name="comments" placeholder="Enter Comments">
+                </div>
+
+                <div style="margin : 10px" class="form-group">
+                    <input type="text" class="form-control text-center" id="rating" [(ngModel)]="feedback.rating"
+                        name="rating" placeholder="Rating(1 to 5)">
+                    </div>
+        </div>
+        <button id="addFeedback" class="btn btn-success" type="submit">Submit</button>
+    </form>
+</div>

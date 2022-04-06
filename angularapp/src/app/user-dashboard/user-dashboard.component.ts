@@ -13,25 +13,21 @@ import {CourseService} from '../course.service';
 export class UserDashboardComponent implements OnInit {
   student:StudentModel[]|undefined;
   courses:Course[]|undefined;
- constructor(private StudentService:StudentService,private CourseService:CourseService,private router: Router) { }
+ constructor(private CourseService:CourseService,private router: Router) { }
 
  logout()
  { 
    sessionStorage.clear()
    this.router.navigate(['user/login']);
  }
- private retriveStudent()
+ addFeedback()
  {
- this.StudentService.retriveStudent().subscribe(data=>(this.student=data))
-}
+   this.router.navigate(['user/feedback']);
+ }
 private retriveCourses()
  {
  this.CourseService.getCourseList().subscribe(data=>(this.courses=data))
 }
- viewStudent()
- { 
-   this.router.navigate(['admin/viewStudent']);
- }
  viewCourses()
  {
    this.router.navigate(['user/courses']);
@@ -42,7 +38,6 @@ private retriveCourses()
   this.router.navigate(['user/viewcourses']);
  }
  ngOnInit(): void {
-   this.retriveStudent();
    this.retriveCourses();
  }
 
