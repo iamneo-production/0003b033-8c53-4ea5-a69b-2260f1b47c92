@@ -8,8 +8,8 @@ import { FeedbackModel } from './feedback-model';
   providedIn: 'root'
 })
 export class FeedbackService {
-  baseUrl="https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/user/viewFeedback";
-  baseUrl1="https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/user/addFeedback";
+  baseUrl="https://8080-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io/user/viewFeedback";
+  baseUrl1="https://8080-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io/user/addFeedback";
   constructor(private httpClient:HttpClient) { }
   retriveFeedback():Observable<FeedbackModel[]>{
     return this.httpClient.get<FeedbackModel[]>(this.baseUrl);
