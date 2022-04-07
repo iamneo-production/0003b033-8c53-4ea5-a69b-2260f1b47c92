@@ -32,8 +32,10 @@ export class AcademyListComponent implements OnInit {
   deleteInstitute(id: number){
     
     this.academyService.deleteInstitute(id).subscribe( data =>{
-      console.log("work")
+      if(confirm("Are You Sure To Delete"))
+      {
       this.getAcademies()
+    }
     })
   }
 
@@ -47,6 +49,7 @@ export class AcademyListComponent implements OnInit {
   }
   addInstitute(){
     this.router.navigate(['admin/addinstitute'])
+    
   }
 
   

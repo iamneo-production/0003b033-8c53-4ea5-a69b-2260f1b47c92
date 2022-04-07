@@ -40,7 +40,11 @@ export class AddCourseComponent implements OnInit {
   }
   onSubmit() {
     console.log(this.course)
-    this.saveCourse();
+    if(this.course.name && this.course.duration && this.course.timing && this.course.enrolled && this.course.description){
+      this.saveCourse();
+    }else{
+      alert("Please fill the all the course details!")
+    }
   }
 
   addCourse(){
