@@ -17,7 +17,7 @@ import com.examly.springapp.exception.ResourceNotFoundException;
 import com.examly.springapp.model.AdmissionModel;
 import com.examly.springapp.repository.AdmissionRepository;
 
-@CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
+@CrossOrigin(origins = "https://8081-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io/")
 @RestController
 @RequestMapping("/user")
 public class UserController {

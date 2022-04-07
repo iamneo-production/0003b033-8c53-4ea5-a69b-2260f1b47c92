@@ -18,7 +18,7 @@ import com.examly.springapp.model.StudentModel;
 import com.examly.springapp.repository.AdminRepository;
 
 //@CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
-@CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
+@CrossOrigin(origins = "https://8081-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @RestController
 @RequestMapping("/admin")
 public class AdminController {
