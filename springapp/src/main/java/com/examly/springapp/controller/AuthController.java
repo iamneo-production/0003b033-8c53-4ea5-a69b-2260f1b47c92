@@ -3,10 +3,12 @@ package com.examly.springapp.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.server.ResponseStatusException;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.examly.springapp.model.LoginModel;
 import com.examly.springapp.model.UserModel;
 import com.examly.springapp.repository.UserRepository;
@@ -21,9 +23,15 @@ public class AuthController {
 	private UserRepository urepo;
 	
 	@PostMapping("/signup")
-	public String saveUser(@RequestBody UserModel user) {
+	public ResponseEntity<String> saveUser(@RequestBody UserModel user) {
+		UserModel user1=urepo.findByEmail(user.getEmail());
+		if(user1!=null)
+		{
 		urepo.save(user);
-		return "\"User added\"";
+		return ResponseEntity.ok("User added");
+		}
+		else
+		   throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Already Exist");
 		
 	}
 	@PostMapping("/login")

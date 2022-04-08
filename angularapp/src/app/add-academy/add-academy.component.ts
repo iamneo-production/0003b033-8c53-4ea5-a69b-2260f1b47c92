@@ -22,12 +22,11 @@ export class AddAcademyComponent implements OnInit {
   ngOnInit(): void {
   }
   saveInstitute() {
+    
     this.academyService.addInstitute(this.academy).subscribe(data => {
       const fd = new FormData()
       console.log(data);
-      
       this.goToAcademyList()
-
     },
       error => console.log(error))
   }
@@ -38,7 +37,13 @@ export class AddAcademyComponent implements OnInit {
   }
   onSubmit() {
     console.log(this.academy)
+    if( ((this.academy.academyName) != null) && ((this.academy.emailId) != null) && ((this.academy.contactNumber) != null) && ((this.academy.academyLocation) != null) ){
     this.saveInstitute();
+    }
+    else
+    {
+      alert("Please Put Necessary Details");
+    }
   }
 
 }

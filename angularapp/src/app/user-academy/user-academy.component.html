@@ -1,0 +1,33 @@
+<nav class="navbar">
+    <a id="navlink1">Abacus academy</a>
+    <a (click)="viewAcademy()" id="userAcademy">Academy</a>
+    <a (click)="viewAcademy()" id="userAcademy">Enrolled Courses</a>
+    <a (click)="addFeedback()" id="userAcademy">Feedback</a>
+    <a (click)="logout()" id="logout">Logout</a>
+</nav>
+<div class="formbody">
+    <h2 style="text-align: center;">Academy List</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Academy Name</th>
+                <th>Contact Number</th>
+                <th>Email Id</th>
+                <th>Academy Location</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let academy of academies" :hover style="background-color:transparent">
+                <td>{{academy.academyName}}</td>
+                <td>{{academy.contactNumber}}</td>
+                <td>{{academy.emailId}}</td>
+                <td>{{academy.academyLocation}}</td>
+                <td>
+                    <button (click) = "selectCourse()" style="margin-left: 10px">Select Course</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
