@@ -14,7 +14,7 @@ import com.examly.springapp.model.UserModel;
 import com.examly.springapp.repository.UserRepository;
 import com.examly.springapp.model.LoginModel;
 
-@CrossOrigin(origins = "https://8081-feedeaaecceeccaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
+@CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @RestController
 @RequestMapping("/user")
 public class AuthController {
@@ -27,11 +27,15 @@ public class AuthController {
 		UserModel user1=urepo.findByEmail(user.getEmail());
 		if(user1!=null)
 		{
+			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Already Exist");
+		
+		}
+		else
+		{
 		urepo.save(user);
 		return ResponseEntity.ok("User added");
 		}
-		else
-		   throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Already Exist");
+		  
 		
 	}
 	@PostMapping("/login")

@@ -11,16 +11,19 @@ export class SignupComponent implements OnInit {
   user:UserModel = new UserModel();
   constructor(private UsersignupService:UsersignupService) { }
 
-  createUser()
+createUser()
 {
-this.UsersignupService.createUser(this.user).subscribe(data=>{console.log(data);
+this.UsersignupService.createUser(this.user).subscribe(data=>{
   alert("Signup success");
 },error=>{
-  if(error.status=400)
+  if(error.status==400)
   {
     alert("User already exist with the email!");
   }
-  console.log(error);
+  else
+  {
+    alert("Signup success"); 
+  }
 });
 }
   onPasswordChange() {
@@ -64,7 +67,6 @@ this.UsersignupService.createUser(this.user).subscribe(data=>{console.log(data);
 
   signup(){
     this.createUser()
-    
   }
 
   ngOnInit(): void {
