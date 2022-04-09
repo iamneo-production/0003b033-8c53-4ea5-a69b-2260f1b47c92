@@ -8,10 +8,10 @@ import { Academy } from './academy';
 })
 export class AcademyService {
 
-  private baseURL = "https://8080-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/academies"
-  private addInstituteURL = "https://8080-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/addinstitute"
-  private editInstituteURL = "https://8080-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/editinstitute"
-  private deleteInstituteURL = "https://8080-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/deleteinstitute"
+  private baseURL = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/academies"
+  private addInstituteURL = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/addinstitute"
+  private editInstituteURL = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/editinstitute"
+  private deleteInstituteURL = "https://8080-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io/admin/deleteinstitute"
 
   constructor(private httpClient: HttpClient) { }
 
