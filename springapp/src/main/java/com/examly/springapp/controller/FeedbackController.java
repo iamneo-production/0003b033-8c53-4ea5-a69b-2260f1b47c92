@@ -17,7 +17,6 @@ import com.examly.springapp.exception.ResourceNotFoundException;
 import com.examly.springapp.model.FeedbackModel;
 import com.examly.springapp.repository.FeedbackRepository;
 
-//@CrossOrigin(origins = "https://8081-febbacaecaaeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @CrossOrigin(origins = "https://8081-dfaeeaaefdfeeddbefefcfadeceafbaedad.examlyiopb.examly.io")
 @RestController
 @RequestMapping("/user")
